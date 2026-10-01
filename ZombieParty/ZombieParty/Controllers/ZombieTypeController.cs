@@ -29,6 +29,7 @@ namespace ZombieParty.Controllers
             if (ModelState.IsValid)
             {
                 // Ajouter à la BD
+                ViewBag.MaListe.Add(zombieType);
             }
 
             return this.View(zombieType);
